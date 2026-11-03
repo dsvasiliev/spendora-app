@@ -1,0 +1,407 @@
+/* ОБЩИЕ */
+
+QLabel, QPushButton, QComboBox, QFrame {
+    font-weight: 400;
+}
+
+QMainWindow {
+    background: #F4F1EC;
+    color: #000000;
+    padding: 3px 3px 3px 3px;
+}
+
+#red {
+    background: red;
+}
+
+QLabel, QPushButton, QComboBox {
+    font-size: 14px;
+}
+
+#ContentWidget {
+    margin: 0px 5px 5px 5px;
+}
+
+QScrollArea {
+    background: transparent;
+    border: none;
+}
+
+QScrollArea QWidget {
+    background: transparent;
+}
+
+QScrollArea QScrollBar:vertical {
+    width: 2px;
+    background: transparent;
+    margin: 0;
+}
+
+QScrollArea QScrollBar::handle:vertical {
+    background: #878686;
+    border-radius: 1px;
+    min-height: 24px;
+}
+
+QScrollArea QScrollBar::add-line:vertical,
+QScrollAreal QScrollBar::sub-line:vertical {
+    height: 0;
+    width: 0;
+    background: none;
+    border: none;
+}
+
+QScrollArea QScrollBar::add-page:vertical,
+QScrollAreal QScrollBar::sub-page:vertical {
+    background: none;
+}
+
+/* ЗАГОЛОВОК */
+#title {
+    font-size: 34px;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+#subtitle {
+    color: #2f2f2f;
+    margin-bottom: 6px;
+}
+
+/* САЙДБАР */
+#sidebar {
+    background: transparent;
+    padding: 0px 0px 0px 0px;
+}
+
+#navButton {
+    margin-bottom: 8px;
+    background: #F4F1EC;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+#navButton:hover {
+    background: #e7e4df;
+}
+
+/* БЛОКИ */
+
+ContentBlock {
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 15px 15px 15px 15px;
+}
+
+#ContentBlockIcon {
+    max-height: 24px;
+    max-width: 24px;
+}
+
+LinkCard:hover {
+    background: #F6F6F6;
+}
+
+#linkArrow {
+    max-height: 20px;
+    max-width: 20px;
+}
+
+#cardText {
+    margin-bottom: 3px; /* Визуально ровный текст и стрелка */
+}
+
+/* ------------------ Главная страница ----------------------- */
+
+#stepNumberWrap {
+    border: 2px solid #b98d7d;
+    border-radius: 18px;
+}
+
+#stepNumber {
+    color: #9f6755;
+    font-weight: 500;
+}
+
+#stepTitle {
+    margin: 0px 15px 0px 15px;
+}
+
+#hintFile {
+    margin-top: 15px;
+    color: #898686;
+    width: 100%;
+}
+
+#emlFileRow {
+    border-radius: 10px;
+    background: transparent;
+}
+
+#emlFileRow:hover {
+    background: #eeece8;
+}
+
+#emlFileRowLabel {
+    color: #373737;
+}
+
+#emlFileRemoveBtn {
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+#emlFileRemoveBtn:hover {
+    background: transparent;
+}
+
+#hintTable {
+    margin: 0px 15px 0px 15px;
+    color: #898686;
+}
+
+#tableFilePanel {
+    background: #F5EDE4;
+    border-radius: 12px;
+}
+
+#tableClearBtn {
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    border-radius: 9px;
+}
+
+/* ----------------------- КНОПКИ --------------------- */
+
+QComboBox {
+    background: transparent;
+    border: 1px solid #373737;
+    border-radius: 8px;
+    padding: 9px 14px;
+}
+
+Button {
+    min-width: 120px;
+    border-radius: 8px;
+}
+
+MinimalButton {
+    background: transparent;
+    padding: 9px 14px 9px 14px;
+}
+
+MinimalButton:disabled {
+    border: 1px solid #A1A1A1;
+    color: #A1A1A1;
+}
+
+MinimalButton:enabled {
+    border: 1px solid #373737;
+    color: #373737;
+}
+
+MinimalButton:enabled:hover {
+    background: #eeece8;
+}
+
+PrimaryButton {
+    padding: 9px 14px 9px 14px;
+    color: #EAEAEA;
+}
+
+PrimaryButton QLabel {
+    color: #EAEAEA;
+}
+
+PrimaryButton:disabled {
+    background: #898686;
+}
+
+PrimaryButton:enabled {
+    background: #373737;
+}
+
+PrimaryButton:enabled:hover {
+    background: #4A4A4A;
+}
+
+QComboBox {
+    background: #F4F1EC;
+}
+
+QComboBox::drop-down {
+    border: none;
+    width: 28px;
+}
+
+#toggleSwitch::indicator {
+    width: 50px;
+    height: 24px;
+    border-radius: 12px;
+    border: 2px solid #b7826e;
+    background: #e9ddd7;
+}
+
+#toggleSwitch::indicator:checked {
+    background: #d4a594;
+    border-color: #9c6857;
+}
+
+#emlClearAllBtn {
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    border-radius: 9px;
+}
+
+/* --------------------- Страница настроек -------------------- */
+
+#SettingListBlock {
+    margin-top: 20px;
+    max-width: 700px;
+}
+
+#version {
+    max-height: 30px;
+}
+
+/* -------------------- Блок выбора катеорий ------------------- */
+
+#selectCategoryBlock {
+    margin: 0px 100px 0px 50px;
+}
+
+#categoryInfoCard {
+    max-width: 400px;
+    margin: 10px 10px 30px 10px;
+    border: 2px solid #c47553;
+    border-radius: 14px;
+}
+
+#categoryInfoIcon {
+    min-width: 28px;
+    max-width: 28px;
+    min-height: 28px;
+    max-height: 28px;
+}
+
+#collapsibleHeader {
+    background: transparent;
+    border: none;
+    text-align: left;
+    padding: 0;
+    margin: 5px 0px 5px 5px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 4px;
+    max-width: 350px;
+}
+
+#collapsibleHeader:hover {
+    background: #eeeeee;
+}
+
+#collapsibleArrow {
+    background: transparent;
+}
+
+#categorySections {
+    background: transparent;
+}
+
+ProductsRow#categoryItemDetected, ProductsRow#categoryItemFromDB {
+/* background: red; */
+    background-color: #F4F1EC;
+    border-radius: 12px;
+}
+
+ProductsRow#categoryItemUnknown {
+    background-color: #F4F1EC;
+    border: 1px solid #23262d;
+    border-radius: 12px;
+}
+
+#categoryIndex {
+    color: #8a8a8a;
+}
+
+#categoryPrice {
+    font-weight: 600;
+}
+
+#categorySelector {
+    min-height: 40px;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    min-width: 180px;
+}
+
+#categorySelector:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+#categoryAiIcon {
+    min-width: 18px;
+    max-width: 18px;
+    min-height: 18px;
+    max-height: 18px;
+}
+
+#categoryColorArrow {
+    min-width: 14px;
+    max-width: 14px;
+    min-height: 14px;
+    max-height: 14px;
+}
+
+#categoryTrashBtn {
+    background: transparent;
+    border: none;
+    border-radius: 6px;
+}
+
+#categoryTrashBtn:hover {
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/* ------------- Страница ожидания -------------- */
+QProgressBar {
+    width: 400px;
+    max-height: 6px;
+    border-radius: 3px;
+    background: #D9D9D9;
+}
+
+QProgressBar::chunk {
+    border-radius: 3px;
+    background: #373737;
+}
+
+/* ------------- Страница итогового отчёта -------------- */
+
+#finalCardTitle {
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+#finalTotalAmount {
+    font-size: 34px;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+#finalTrendIcon {
+    min-width: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    max-height: 20px;
+}
+
+#open_table_button {
+    min-width: 150px;
+}
+

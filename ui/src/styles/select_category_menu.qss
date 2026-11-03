@@ -1,0 +1,73 @@
+/* МЕНЮ ВЫБОРА КАТЕГОРИИ */
+CategorySelectDialog {
+    background: #F4F1EC;
+}
+
+#categorySearchField {
+    border: 1px solid #373737;
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 15px;
+    background: #F4F1EC;
+}
+
+#resetSearchButton {
+    min-width: 34px;
+    max-width: 34px;
+}
+
+#categorySearchField:hover {
+    background: #eeece8;
+}
+
+#categorySearchField::placeholder {
+    color: #9a9690;
+}
+
+#categorySearchBtn:hover {
+    background: #4a4a4a;
+}
+
+#categoryMenuScroll {
+    background: transparent;
+    border: none;
+}
+
+CategoryGroupCard#categoryGroupCard {
+    background: #ffffff;
+    border-radius: 7px;
+}
+
+#categoryGroupHeader {
+    background: transparent;
+    border: none;
+    text-align: left;
+    padding: 5px 5px;
+    margin: 5px 5px;
+     border-radius: 7px;
+}
+
+#categoryGroupHeader:hover {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+#categorySubItem {
+    background: transparent;
+    border: none;
+    /* border-top: 1px solid #B1B1B1; */
+    text-align: left;
+    padding: 5px 10px;
+    margin: 2px 10px 2px 30px;
+    border-radius: 7px;
+}
+
+#categorySubItem:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+
+#openArrow {
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+    max-height: 24px;
+    max-width: 24px;
+}

@@ -1,0 +1,10 @@
+/* --------------- Диалоговое окно обновления ------------------------- */
+
+Updating {
+    background: #F4F1EC;
+}
+
+#UpdatingTitleLabel {
+    font-size: 25px;
+    font-weight: 600;
+}

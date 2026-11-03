@@ -1,0 +1,10 @@
+/* --------- Диалоговое окно предупреждения -------------------- */
+
+WarningDialog {
+    background: #F4F1EC;
+}
+
+PrimaryButton, MinimalButton {
+    padding: 6px 4px 6px 4px;
+    min-width: 70px;
+}
